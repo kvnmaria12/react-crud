@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form input:first-child {
+  margin-top: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input {
+  border: 1px solid #cccccc;
+  padding: 12px 10px;
+  outline: none;
+  margin-bottom: 12px;
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form button {
+  background-color: aquamarine;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.dataTable {
+  margin-top: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+table button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(255, 191, 0);
+  padding: 6px 5px;
+  margin: 0 5px;
+  border-radius: 6px;
+}
+
+table button:last-child {
+  background-color: red;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 12px;
+}
+
+.edit-cancel-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edit-cancel-btn button:last-child {
+  background-color: red;
 }
